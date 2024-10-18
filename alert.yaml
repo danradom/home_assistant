@@ -1,0 +1,11 @@
+# alert when template threshold is hit (alert.front_lock_percent)
+front_lock_percent:
+  name: "front lock battery"
+  message: ""
+  done_message: "front lock battery has been replaced"
+  entity_id: binary_sensor.front_lock_percent
+  repeat: 60
+  can_acknowledge: true
+  skip_first: false
+  notifiers:
+    - dr_telegram
