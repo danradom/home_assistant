@@ -29,8 +29,6 @@ sensors:
     device_class: temperature
 
 
-# ----------------------------------------------------------------------------------------------------
-
 binary_sensors:
   front_lock_percent:
     value_template: "{{ (states('sensor.front_door_battery') | int(0) < 31) }}"
