@@ -1,7 +1,7 @@
 # home assistant tools
 
 
-| file | detail |
+| file | details |
 | ------ | ------ |
 | active_alert_card.yaml | entities card showing only active alerts.  requires [auto entities card] |
 | alert.yaml | generates alert when bettery threshold defined in template,yaml is hit |
