@@ -1,8 +1,5 @@
-```
-# File with header
 
-This is a file with a top level header
-```
+# File with header
 
 Copyright 2024 Dan Radom
 
