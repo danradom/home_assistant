@@ -1,0 +1,15 @@
+type: custom:auto-entities
+card:
+  type: entities
+  state_color: true
+  card_mod: null
+filter:
+  include:
+    - entity_id: alert.*
+      options: {}
+  exclude:
+    - state: "off"
+    - state: idle
+  sort:
+    method: last_changed
+    reverse: true

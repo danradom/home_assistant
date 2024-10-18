@@ -1,6 +1,4 @@
 sensors:
-
-# convert celsius to fahrenheit
   bedroom_temp:
     value_template: "{{ (states('sensor.bedroom_temp_c') | float * 1.8 + 32) | round(1) }}"
     device_class: temperature
@@ -34,8 +32,6 @@ sensors:
 # ----------------------------------------------------------------------------------------------------
 
 binary_sensors:
-
-# binary sensor for battery level threshold
   front_lock_percent:
     value_template: "{{ (states('sensor.front_door_battery') | int(0) < 31) }}"
     device_class: battery

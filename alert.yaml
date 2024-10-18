@@ -1,4 +1,3 @@
-# alert when template threshold is hit (alert.front_lock_percent)
 front_lock_percent:
   name: "front lock battery"
   message: ""
