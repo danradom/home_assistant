@@ -3,6 +3,6 @@ home assistant tools
 
 | file | detail |
 | ------ | ------ |
-| active_alert_card | entities card showing only active alerts.  requires [def] |
+| active_alert_card | entities card showing only active alerts.  requires [auto entities card] |
 
-[def]: https://github.com/thomasloven/lovelace-auto-entities
+[auto entities card]: https://github.com/thomasloven/lovelace-auto-entities
