@@ -1,3 +1,5 @@
+# auto-entities card from HACS
+
 type: custom:auto-entities
 card:
   type: entities
