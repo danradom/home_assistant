@@ -14,4 +14,4 @@
 
 MIT
 
-**Free Software, Hell Yeah!**
+**free software,hell yeah!**
