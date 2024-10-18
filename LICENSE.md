@@ -1,5 +1,5 @@
 
-# File with header
+# 
 
 Copyright 2024 Dan Radom
 
