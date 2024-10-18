@@ -1,6 +1,5 @@
 # home assistant tools
 
-
 | file | details |
 | ------ | ------ |
 | active_alert_card.yaml | entities card showing only active alerts.  requires [auto entities card] |
@@ -14,4 +13,4 @@
 
 MIT
 
-**free software, hell yeah!**
+**free software, hell yeah
