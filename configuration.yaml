@@ -1,0 +1,109 @@
+default_config:
+
+
+# ----------------------------------------------------------------------------------------------------
+
+
+alert: !include alerts.yaml
+automation: !include automations.yaml
+binary_sensor: !include sensors-bin.yaml
+group: !include groups.yaml
+input_boolean: !include input_boolean.yaml
+mqtt: !include mqtt.yaml
+recorder: !include recorder.yaml
+scene: !include scenes.yaml
+script: !include scripts.yaml
+sensor: !include sensors.yaml
+template: !include template.yaml
+zabbix: !include zabbix.yaml
+
+
+# ----------------------------------------------------------------------------------------------------
+
+
+homeassistant:
+  name: home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  country: US
+  elevation: 5000
+  unit_system: imperial
+  temperature_unit: F
+  time_zone: America/XXX
+  internal_url: "http://172.16.11.200:8123"
+  external_url: "https://blahblahblah.ui.nabu.casa"
+  customize: !include customize.yaml
+  customize_glob: !include customize_glob.yaml
+
+
+# ----------------------------------------------------------------------------------------------------
+
+
+logger:
+  default: info
+#  logs:
+#    homeassistant.components.recorder: debug
+
+
+# ----------------------------------------------------------------------------------------------------
+
+
+cloud:
+
+
+# ----------------------------------------------------------------------------------------------------
+
+
+tts:
+  - platform: google_translate
+
+
+# ----------------------------------------------------------------------------------------------------
+
+
+python_script:
+
+
+# ----------------------------------------------------------------------------------------------------
+
+
+# climate:
+#  - platform: honeywell
+#    username: !secret climate_user
+#    password: !secret climate_pass
+
+
+# ----------------------------------------------------------------------------------------------------
+
+
+telegram_bot:
+  - platform: polling
+    api_key: XXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    allowed_chat_ids:
+      - XXXXXXXXX
+      - XXXXXXXXX
+
+notify:
+  - platform: telegram
+    name: dr_telegram
+    chat_id: XXXXXXXXX
+
+
+# ----------------------------------------------------------------------------------------------------
+
+
+frontend:
+  themes: !include_dir_merge_named themes
+
+
+# ----------------------------------------------------------------------------------------------------
+
+
+yahoofinance:
+  show_trending_icon: true
+  scan_interval:
+    minutes: 5
+  symbols:
+    - ^GSPC
+    - ^DJI
+    - ^IXIC
