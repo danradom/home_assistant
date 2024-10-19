@@ -99,3 +99,6 @@ yahoofinance:
     - ^DJI
     - ^IXIC
     - VOO
+    - WSMDX
+    - VINIX
+    - VEXAX
