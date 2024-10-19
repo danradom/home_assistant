@@ -30,7 +30,7 @@ homeassistant:
   unit_system: imperial
   temperature_unit: F
   time_zone: America/XXX
-  internal_url: "http://172.16.11.200:8123"
+  internal_url: "http://10.16.11.200:8123"
   external_url: "https://blahblahblah.ui.nabu.casa"
   customize: !include customize.yaml
   customize_glob: !include customize_glob.yaml
