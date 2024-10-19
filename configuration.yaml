@@ -67,15 +67,6 @@ python_script:
 # ----------------------------------------------------------------------------------------------------
 
 
-# climate:
-#  - platform: honeywell
-#    username: !secret climate_user
-#    password: !secret climate_pass
-
-
-# ----------------------------------------------------------------------------------------------------
-
-
 telegram_bot:
   - platform: polling
     api_key: XXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
