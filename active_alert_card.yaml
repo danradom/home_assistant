@@ -17,7 +17,7 @@ filter:
     - entity_id: alert.*temp*
       options:
         icon: mdi:snowflake-thermometer
-    - entity_id: alert.fr*_door*
+    - entity_id: alert.fr*_door_open
       options:
         icon: mdi:fridge-alert
     - entity_id: alert.leak*
