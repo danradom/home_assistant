@@ -5,8 +5,27 @@ card:
   card_mod: null
 filter:
   include:
-    - entity_id: alert.*
-      options: {}
+    - entity_id: alert.door*
+      options:
+        icon: mdi:door-open
+    - entity_id: alert.window*
+      options:
+        icon: mdi:window-open
+    - entity_id: alert.*percent*
+      options:
+        icon: mdi:battery-low
+    - entity_id: alert.*temp*
+      options:
+        icon: mdi:snowflake-thermometer
+    - entity_id: alert.fr*_door*
+      options:
+        icon: mdi:fridge-alert
+    - entity_id: alert.leak*
+      options:
+        icon: mdi:pipe-leak
+    - entity_id: alert.*_door_unlocked
+      options:
+        icon: mdi:lock-alert
   exclude:
     - state: "off"
     - state: idle
